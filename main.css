@@ -8,7 +8,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-html {
+ html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -572,5 +572,119 @@ img {
 .medicine-donate_inner-div {
   text-align: center;
 }
-/* MED-DONATE ended */
 
+footer {
+  background-color: #f8f8f8;
+  padding: 40px 0;
+  border-top: 1px solid #e7e7e7;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 20px;
+  margin-top: 20px;
+}
+
+.footer-section h3 {
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  color: #413c3c;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  padding: 10px;
+  color: #413c3c;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #413c3c;
+}
+
+.footer-section p{
+  padding: 10px;
+  color: #413c3c;
+}
+
+.footer-section form {
+  padding: 10px;
+  display: flex;
+
+}
+
+.footer-section .signup-input {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: 1px solid #007bff;
+  color: #333;
+  border-radius: 25px 0 0 25px;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+}
+
+.footer-section .signup-button {
+  width: 100px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 0 25px 25px 0;
+  outline: none;
+}
+
+.footer-section .signup-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e7e7e7;
+}
+
+.footer-social {
+  margin-bottom: 20px;
+}
+
+.footer-social a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.footer-social img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-payment {
+  margin-top: 20px;
+}
+
+.footer-payment img {
+  margin: 0 10px;
+  width: 90px;
+  height: auto;
+}
+.footer-bottom p{
+  color: #948989;
+}
