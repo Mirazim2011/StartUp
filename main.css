@@ -8,7 +8,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- html {
+html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -572,18 +572,18 @@ img {
 .medicine-donate_inner-div {
   text-align: center;
 }
-
+/* SITE-FOOTER started */
 footer {
   background-color: #f8f8f8;
   padding: 40px 0;
-  border-top: 1px solid #e7e7e7;
+  /* border-top: 1px solid #e7e7e7;  */
 }
 
-.footer-container {
+.footer-inner {
   display: flex;
-  justify-content: space-around;
-  max-width: 1200px;
-  margin: auto;
+  margin-bottom: 93px;
+  max-width: 1300px;
+  justify-content: space-between;
 }
 
 .footer-section {
@@ -593,80 +593,87 @@ footer {
 }
 
 .footer-section h3 {
-  padding: 10px;
-  font-size: 18px;
-  margin-bottom: 20px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  color: #000;
 }
 
 .footer-section ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 23px;
   list-style: none;
   padding: 0;
-  color: #413c3c;
 }
 
-.footer-section ul li {
-  margin-bottom: 10px;
-  padding: 10px;
-  color: #413c3c;
+.footer-section ul li:nth-child(1) {
+  margin-top: 23px;
 }
 
 .footer-section ul li a {
+  display: inline-block;
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 15px;
+  text-align: center;
+  color: #000;
   text-decoration: none;
-  color: #413c3c;
 }
 
-.footer-section p{
-  padding: 10px;
-  color: #413c3c;
+.footer-section p {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 12px;
+  color: #000;
+  margin-top: 23px;
 }
 
 .footer-section form {
-  padding: 10px;
+  margin-top: 23px;
   display: flex;
-
 }
 
 .footer-section .signup-input {
-  padding: 10px 20px;
+  font-family: var(--font-family);
+  padding: 11px 18px;
   background-color: #ffffff;
-  border: 1px solid #007bff;
-  color: #333;
-  border-radius: 25px 0 0 25px;
+  border: 1px solid #154488;
+  border-radius: 25px;
   outline: none;
-  flex: 1;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 15px;
+  color: #000;
+  width: 356px;
 }
-
 .footer-section .signup-button {
-  width: 100px;
-  padding: 10px 20px;
-  background-color: #007bff;
-  border: 1px solid #007bff;
-  color: white;
+  padding: 15px 32px;
+  background: #154488;
+  border: none;
   cursor: pointer;
-  font-size: 16px;
-  border-radius: 0 25px 25px 0;
+  border-radius: 25px;
   outline: none;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  margin-left: -120px;
+  width: 120px;
 }
-
-.footer-section .signup-button:hover {
-  background-color: #0056b3;
-}
-
-
 
 .footer-bottom {
   text-align: center;
-  margin-top: 20px;
-  padding-top: 20px;
-  border-top: 1px solid #e7e7e7;
+  margin-top: 34px;
 }
 
 .footer-social {
-  margin-bottom: 20px;
+  margin-bottom: 37px;
 }
 
 .footer-social a {
+  text-decoration: none;
   margin: 0 10px;
   display: inline-block;
 }
@@ -679,12 +686,23 @@ footer {
 .footer-payment {
   margin-top: 20px;
 }
-
+.footer-address {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 15px;
+  color: #000;  
+  max-width: 330px;
+}
 .footer-payment img {
   margin: 0 10px;
   width: 90px;
   height: auto;
 }
-.footer-bottom p{
-  color: #948989;
+.footer-bottom p {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  color: #7d7d7d;
 }
+/* SITE-FOOTER ended */
