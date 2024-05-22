@@ -544,33 +544,30 @@ footer {
 .footer-section .signup-input {
   padding: 10px 20px;
   background-color: #ffffff;
-  border: none;
-  color: white;
-  border-bottom: #000;
-  border-radius: 30px 0 0 30px;
-  border-right: 1px solid #007bff;
+  border: 1px solid #007bff;
+  color: #333;
+  border-radius: 25px 0 0 25px;
   outline: none;
   flex: 1;
   font-size: 16px;
 }
 
-
-
 .footer-section .signup-button {
+  width: 100px;
   padding: 10px 20px;
-  width: 80px;
-  height: 50px;
   background-color: #007bff;
-  border: none;
+  border: 1px solid #007bff;
   color: white;
   cursor: pointer;
   font-size: 16px;
   border-radius: 0 25px 25px 0;
+  outline: none;
 }
 
 .footer-section .signup-button:hover {
   background-color: #0056b3;
 }
+
 
 
 .footer-bottom {
