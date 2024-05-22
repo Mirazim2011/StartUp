@@ -423,6 +423,15 @@ img {
   vertical-align: middle;
   object-fit: cover;
 }
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 .container {
   max-width: 1400px;
   width: 100%;
@@ -430,6 +439,86 @@ img {
   margin: 0 auto;
 }
 /* SITE-HEADER started */
+.site-header {
+  background-color: #498cec;
+  margin-bottom: 22px;
+}
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  padding: 19px 0;
+}
+.site-header__burger-btn-box {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-right: 25px;
+  border-right: 2px solid #fff;
+}
+.site-header__burger-btn {
+  width: 41px;
+  height: 41px;
+}
+.site-header__logo-link {
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 22px;
+}
+.site-header__list {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  max-width: 570px;
+  width: 100%;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.site-header__item-link {
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+}
+.site-header__main {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.site-header__form-box {
+  margin-left: 23px;
+}
+.site-header__form-box-sign {
+  display: inline-block;
+  text-decoration: none;
+}
+.btn-sign {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  color: #154488;
+  padding: 14px 32px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.site-header__form-box-log {
+  display: inline-block;
+  text-decoration: none;
+}
+.btn-log {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  color: #154488;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 14px 28px;
+  border-left: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-left: -5px;
+}
 /* SITE-HEADER ended */
 
 /* MED-DONATE started */
@@ -484,3 +573,4 @@ img {
   text-align: center;
 }
 /* MED-DONATE ended */
+
